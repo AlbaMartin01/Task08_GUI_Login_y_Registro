@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.botonLogin).setOnClickListener{
             if (arrayUsuarios.contains(nombreUsuario)){
-                var intento = Intent(this, Registro::class.java)
+                var intento = Intent(this, Registros::class.java)
                 intento.putExtra("ArrayUsuarios", arrayUsuarios)
                 startActivity(intento)
             }else{
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 var mens = "El usuario ya está reistrado. Pulse el botón 'Login' para logearse."
                 Toast.makeText(this@MainActivity, mens, Toast.LENGTH_LONG).show()
             } else{
-                var intento = Intent(this, Registro::class.java)
+                var intento = Intent(this, Registros::class.java)
                 intento.putExtra("ArrayUsuarios", arrayUsuarios)
                 startActivity(intento)
             }

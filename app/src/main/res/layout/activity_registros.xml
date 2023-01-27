@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="17dp"
+                android:gravity="right"
+                android:text="Nombre Usuario:">
+            </TextView>
+
+            <EditText
+                android:id="@+id/nombreU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="34dp"
+                android:gravity="right"
+                android:textSize="17dp"
+                android:text="Contraseña:">
+            </TextView>
+
+            <EditText
+                android:id="@+id/contra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="31dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textSize="17dp"
+                android:gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp">
+            </TextView>
+            <RadioButton
+                android:id="@+id/hom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:text="H">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/muj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="M">
+            </RadioButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="34dp"
+                android:gravity="right"
+                android:textSize="17dp"
+                android:text="Nacionalidad:">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="31dp"
+                android:entries="@array/nacionalidades">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aficiones:"
+                android:textSize="17dp"
+                android:gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp">
+            </TextView>
+            <CheckBox
+                android:id="@+id/tenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:text="Tenis">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/futfol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Fútbol">
+            </CheckBox>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="CV resumido:">
+        </TextView>
+        <EditText
+            android:id="@+id/cvResum"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp">
+
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="Cancelar"
+                android:layout_marginRight="10dp"
+                tools:ignore="MissingConstraints">
+            </Button>
+
+            <Button
+                android:id="@+id/registrar"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="Registrar"
+                tools:ignore="MissingConstraints">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
