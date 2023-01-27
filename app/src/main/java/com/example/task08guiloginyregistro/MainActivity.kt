@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.botonLogin).setOnClickListener{
             if (arrayUsuarios.contains(nombreUsuario)){
-                var intento = Intent(this, Registros::class.java)
+                var intento = Intent(this, Siguiente::class.java)
                 intento.putExtra("ArrayUsuarios", arrayUsuarios)
                 startActivity(intento)
-            }else{
+            } else{
                 var mens = "El usuario no existe. Tienes que registrarte en el botón 'Registro'."
                 Toast.makeText(this@MainActivity, mens, Toast.LENGTH_LONG).show()
             }

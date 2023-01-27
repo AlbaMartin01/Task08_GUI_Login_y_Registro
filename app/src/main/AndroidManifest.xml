@@ -12,10 +12,10 @@
         android:theme="@style/Theme.Task08GUILoginYRegistro"
         tools:targetApi="31">
         <activity
-            android:name=".Registros"
+            android:name=".Siguiente"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name=".Registros"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
