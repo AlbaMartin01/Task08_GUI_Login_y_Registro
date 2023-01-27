@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Registros">
 
 
     <LinearLayout
@@ -58,41 +58,46 @@
                 android:id="@+id/contra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="31dp">
+                android:layout_marginRight="31dp"
+                android:inputType="textPassword">
             </EditText>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="30dp">
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sexo:"
-                android:textSize="17dp"
-                android:gravity="right"
                 android:layout_marginLeft="80dp"
-                android:layout_marginRight="10dp">
-            </TextView>
-            <RadioButton
-                android:id="@+id/hom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:textSize="17dp"
-                android:text="H">
-            </RadioButton>
-            <RadioButton
-                android:id="@+id/muj"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="Sexo:"
+                android:textSize="17dp"></TextView>
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:text="M">
-            </RadioButton>
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/hom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="H"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/muj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textSize="17dp" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
